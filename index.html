@@ -1,0 +1,140 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Lexend+Mega&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans|Rock+Salt&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/CSS/style.css">
+    <title>Running App</title>
+</head>
+
+<body>
+
+    <!-- jumbotron header -->
+    <div class="jumbotron jumbotron-fluid" id="header">
+        <div class="container">
+            <div id="imageContainer">
+                <a href="index.html"><img src="assets/Images/runningLogo.png" width="130" height="130"
+                        alt="Tnt Girl Running PNG image" />
+                </a>
+                <a href="index.html">
+                    <div id="imageText">Be4</div>
+                </a>
+            </div>
+
+            <a id="trackLink" href="tracker.html">Track a Run</a>
+        </div>
+    </div>
+
+    <!-- App description below header -->
+    <h3 id="slogan">The motivation needed to hit the ground running is just a click away!</h3>
+
+    <!-- form  -->
+    <form id="form">
+        <div class="container" id="submitButton">
+            <div class="form-group">
+                <input type="text" class="form-control" id="userInput" aria-describedby="emailHelp"
+                    placeholder="Enter your city here">
+            </div>
+
+            <!-- Popup/popover -->
+
+            <div class="card shadow bg-warning" id="popUp">
+                <div class="card-body">
+                    <div class="card-title">
+                        <div class="title">
+                            <h2>Attention!</h2>
+                        </div>
+                        <button type="button" class="closeButton" id="closeButton">x</button> 
+                    </div>
+                    <!-- <h4>Attention!</h4> -->
+                    <p class="card-text">
+                        Please only type in the city without comma (,) and state.
+                    </p>
+                </div>
+            </div>
+
+
+            <button type="button" class="btn btn-primary" id="button">Submit</button>
+        </div>
+    </form>
+
+    <!-- motivational quote displayed after quote -->
+    <div class="container" id="motivationalQuote">
+    </div>
+
+    <!-- First table for weather cast -->
+    <div class="container" id="weatherDiv">
+        <table class="table" id="weatherTable">
+            <thead>
+                <tr>
+                    <h2 scope="tableTitle1" id="tableHeader">It's a beautiful day to lace up your shoes and see the
+                        world!</h2>
+                </tr>
+                <tr>
+                    <h3 id="city"></h3>
+                </tr>
+            </thead>
+            <tbody>
+
+                <tr>
+                    <th scope="row"></th>
+                    <th id="weatherTitle">The temperature is</th>
+
+                    <th scope="row"></th>
+                    <th id="weatherDescriptionTitle">Look up and you'll see</th>
+
+                    <th scope="row"></th>
+                    <th id="humidityTitle">The humidity is</th>
+
+                    <th scope="row"></th>
+                    <th id="windTitle">The wind is blowing at</th>
+                </tr>
+                <tr>
+                    <td scope="row"></td>
+                    <td id="weather"></td>
+
+                    <td scope="row"></td>
+                    <td id="weatherDescription"></td>
+
+                    <td scope="row"></td>
+                    <td id="humidity"></td>
+
+                    <td scope="row"></td>
+                    <td id="wind"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- a little something to get you moving -->
+    <div class="music-quote" id="musicQuote">
+    </div>
+
+    <!-- div for displaying the music player -->
+    <div class="container" id="napsterDiv">
+    </div>
+
+    <!-- button created when first submit button is clicked, appeneded to bottom of songs -->
+    <div class="pageButton" id="musicButton"></div>
+
+    <!-- div for displaying breweries -->
+    <div class="container" id="beerDiv">
+    </div>
+
+    <div class="pageButton" id="beerButton">
+    </div>
+</body>
+
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.15.3/axios.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+<script src="assets/JavaScript/app.js"></script>

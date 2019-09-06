@@ -1,0 +1,844 @@
+body {
+    background-image: linear-gradient(0deg, rgba(134, 8, 8, 0.5), rgba(13, 10, 235, 0.5)), url(../Images/background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'Lexend Mega', sans-serif;
+    margin-bottom: 200px;
+}
+
+/* header div with logo */
+
+#header {
+    background: rgb(211, 211, 211, 0.4) !important;
+    padding: 20px !important;
+    text-align: center;
+    position: relative;
+}
+
+/* logo in the header */
+
+#imageContainer {
+    position: relative;
+}
+
+/* text on the logo, "Be4" */
+
+#imageText {
+    position: absolute;
+    bottom: 0%;
+    left: 40%;
+    color: white;
+    font-size: 60px;
+    font-family: 'Rock Salt', cursive;
+}
+
+#trackLink {
+    position: absolute;
+    top: 60%;
+    right: 180px;
+    color: white;
+    font-size: 25px;
+    transition: all 0.5s ease 0s;
+}
+
+#trackLink:hover {
+    text-decoration: none;
+    color: white !important;
+    font-weight: 700 !important;
+    padding: 5px;
+    border-radius: 8px;
+    letter-spacing: 3px;
+    background: rgba(218, 15, 218, 0.6);
+    -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0);
+    -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0);
+    transition: all 0.3s ease 0s;
+}
+
+/* Text on landing page describing the app */
+
+#slogan {
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    width: 60%;
+    margin: 100px auto 80px;
+}
+
+/* form input to select city */
+
+#userInput {
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+    transition: all 0.5s ease 0s;
+}
+
+/* hover animation for form input */
+
+#userInput:hover {
+    color: white !important;
+    font-weight: 700 !important;
+    letter-spacing: 3px;
+    background: rgba(218, 15, 218, 0.4);
+    -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0);
+    -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0);
+    transition: all 0.3s ease 0s;
+}
+
+/* placeholder text inside of form */
+
+#userInput::-webkit-input-placeholder {
+    color: black;
+}
+
+/* change text color on hover */
+
+#userInput:hover::-webkit-input-placeholder {
+    color: white
+}
+
+/* quotes that cycle after button pressed */
+
+#motivationalQuote {
+    display: none;
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    margin: 200px auto;
+    height: 300px;
+
+    animation: change_opacity 4s infinite alternate;
+}
+
+
+@keyframes change_opacity {
+    0% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 1
+    }
+}
+
+
+/* a little something to get you moving */
+
+#musicQuote {
+    text-align: center;
+    color: white;
+    font-size: 35px;
+    font-weight: bolder;
+    margin-bottom: 30px;
+    margin-top: 100px;
+}
+
+/* div containing audio player and image */
+
+#napsterDiv {
+    clear: both;
+    overflow: hidden;
+    padding-bottom: 25px;
+}
+
+/* div containing each song with image and player inside */
+
+.songDisplay {
+    margin: 15px;
+    margin-left: 45px;
+    width: 300px;
+    background: black;
+    float: left;
+    border-radius: 25px;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+
+/* adds hover animation to each .songDisplay */
+
+.songDisplay:hover {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+/* image behind music player*/
+
+#artistImage {
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+}
+
+/* centers the button */
+
+#submitButton {
+    text-align: center;
+}
+
+/* frist submit button*/
+
+#button {
+    border: none;
+    background: rgba(218, 15, 218, 0.9);
+    color: #ffffff !important;
+    font-weight: 100;
+    margin-bottom: 50px;
+    padding: 10px 30px;
+    border-radius: 6px;
+    display: inline-block;
+    transition: all 0.3s ease 0s;
+}
+
+/* hover animations for submit button */
+
+#button:hover {
+    color: white !important;
+    font-weight: 700 !important;
+    letter-spacing: 3px;
+    background: rgba(218, 15, 218, 0.7);
+    -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0);
+    -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0);
+    transition: all 0.3s ease 0s;
+}
+
+/* button added to the bottom of the music options */
+
+#newButton {
+    text-align: center;
+}
+
+.newbutton {
+    border: none;
+    background: rgba(218, 15, 218, 0.9);
+    color: #ffffff !important;
+    font-weight: 100;
+    margin-bottom: 50px;
+    padding: 10px 30px;
+    border-radius: 6px;
+    display: inline-block;
+    transition: all 0.3s ease 0s;
+    margin-top: 40px;
+}
+
+.newButton:hover {
+    color: white !important;
+    font-weight: 700 !important;
+    letter-spacing: 3px;
+    background: rgba(218, 15, 218, 0.7);
+    -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0);
+    -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0);
+    transition: all 0.3s ease 0s;
+}
+
+.pageButton {
+    text-align: center;
+}
+
+/* div containing the weather info */
+
+#weatherDiv {
+    display: none;
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+    border-radius: 8px;
+    margin: 30px auto 200px;
+    clear: both;
+    background: rgba(218, 15, 218, 0.8);
+}
+
+/* weather table */
+
+.table {
+    text-align: center;
+    table-layout: inherit;
+    margin-bottom: 100px;
+    color: white;
+}
+
+#weather,
+#weatherDescription,
+#humidity,
+#wind {
+    text-align: center;
+}
+
+
+#tableHeader {
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    margin-top: 70px;
+    margin-bottom: 50px;
+}
+
+/* running fast in ... */
+
+#city {
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+}
+
+th {
+    font-size: 20px;
+    padding-left: 7px !important;
+}
+
+td {
+    font-size: 30px;
+    padding: none !important;
+    text-align: left;
+}
+
+/* div containing brewery info */
+
+#beerDiv {
+    display: none;
+    margin-top: 300px;
+    margin-bottom: 40px;
+    background: rgba(218, 15, 218, 0.8);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* eadch individual brewery displayed on page */
+
+.breweryInfo {
+    color: white;
+    text-align: center;
+    font-size: 22px;
+}
+
+.breweryInfo h2 {
+    color: white;
+}
+
+#beerTitle {
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    margin-top: 70px;
+    margin-bottom: 50px;
+}
+
+.breweryWebsite {
+    display: inline-block;
+    transition: all 0.3s ease 0s;
+    color: rgba(13, 10, 235);
+}
+
+.breweryWebsite:hover {
+    padding: 0 10px;
+    text-decoration: none;
+    color: white;
+    border-radius: 8px;
+    letter-spacing: 3px;
+    -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0);
+    -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0);
+    transition: all 0.3s ease 0s;
+}
+
+h4 {
+    margin-bottom: 0px !important;
+    padding-bottom: 0px !important;
+}
+
+#popUp {
+    display: none;
+    width: 400px;
+    position: absolute;
+    top: -160px;
+    left: 370px;
+}
+
+#submitButton {
+    position: relative;
+}
+
+.card-title {
+    padding: 2px 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    margin-top: 0px;
+    position: relative;
+}
+
+#closeButton {
+    margin-top: 0px;
+    position: absolute;
+    top: -7px;
+    left: 335px;
+    border-radius: 7px;
+    background: rgba(218, 15, 218, 0.9);
+    color: white;
+
+
+}
+
+.card-title.closeButton {
+    margin-left: 49px;
+    padding-left: 8px;
+    margin-right: -13px;
+    margin-top: 10px;
+}
+
+h2 {
+    color: black;
+    margin-top: 0px;
+    margin-left: 55px;
+}
+
+.xMark {
+    position: absolute;
+    left: 743px;
+    top: -141px;
+
+
+}
+
+/* Responsive Design */
+
+/* Width at 980px and below */
+@media screen and (max-width: 960px) {
+
+    #header {
+        background: rgb(211, 211, 211, 0.4) !important;
+        padding: 20px !important;
+        text-align: center;
+        position: relative;
+    }
+
+    #imageContainer {
+        position: relative;
+    }
+
+    #slogan {
+        text-align: center;
+        font-size: 16px;
+        width: 60%;
+        margin: 100px auto 80px;
+    }
+
+    #imageText {
+        position: relative;
+        /* bottom: 0%; */
+        left: auto;
+        font-size: 20px;
+    }
+
+    #trackLink {
+        position: relative;
+        /* top: 30%; */
+        right: auto;
+        font-size: 12px;
+        transition: all 0.5s ease 0s;
+        align-content: center;
+        padding-top: 10px;
+    }
+
+    #motivationalQuote {
+        display: none;
+        text-align: center;
+        font-size: 16px;
+        animation: change_opacity 4s infinite alternate;
+        margin: 100px auto;
+        height: 150px;
+    }
+
+    #tableHeader {
+        text-align: center;
+        color: white;
+        font-size: 1 0px;
+        margin-top: 30px;
+        margin-bottom: 50px;
+    }
+
+    th {
+        font-size: 10px;
+        padding-left: 7px !important;
+    }
+
+    td {
+        font-size: 15px;
+        padding: none !important;
+        text-align: left;
+    }
+
+    tr {
+        font-size: 10px;
+    }
+
+    .breweryInfo {
+        color: white;
+        text-align: center;
+        font-size: 14px;
+    }
+
+    #beerTitle {
+        text-align: center;
+        color: white;
+        font-size: 24px;
+        margin-top: 35px;
+        margin-bottom: 20px;
+    }
+
+    h2 {
+        font-size: 14px;
+    }
+
+    #popUp {
+        display: none;
+        width: 200px;
+        position: absolute;
+        top: -160px;
+        left: 260px;
+        text-align: center;
+    }
+
+    #submitButton {
+        position: relative;
+    }
+
+    .card-body {
+        text-align: center;
+    }
+
+    .card-title {
+        padding: 2px 8px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-weight: bold;
+        margin-top: 0px;
+        position: relative;
+    }
+
+    #closeButton {
+        margin-top: 0px;
+        position: absolute;
+        top: -7px;
+        left: 145px;
+        border-radius: 7px;
+        background: rgba(218, 15, 218, 0.9);
+        color: white;
+    }
+
+    .card-title.closeButton {
+        margin-left: 49px;
+        padding-left: 8px;
+        margin-right: -13px;
+        margin-top: 10px;
+    }
+
+    .card-text {
+        font-size: 12px;
+    }
+
+}
+
+/* Width at 768px and below */
+
+@media screen and (max-width: 768px) {
+    #header {
+        background: rgb(211, 211, 211, 0.4) !important;
+        padding: 20px !important;
+        text-align: center;
+        position: relative;
+    }
+
+    #imageContainer {
+        position: relative;
+    }
+
+    #slogan {
+        text-align: center;
+        font-size: 16px;
+        width: 60%;
+        margin: 100px auto 80px;
+    }
+
+    #imageText {
+        position: relative;
+        /* bottom: 0%; */
+        left: auto;
+        font-size: 20px;
+    }
+
+    #trackLink {
+        position: relative;
+        /* top: 30%; */
+        right: auto;
+        font-size: 12px;
+        transition: all 0.5s ease 0s;
+        align-content: center;
+        padding-top: 10px;
+    }
+
+    #motivationalQuote {
+        display: none;
+        text-align: center;
+        font-size: 16px;
+        animation: change_opacity 4s infinite alternate;
+        margin: 100px auto;
+        height: 150px;
+    }
+
+    #tableHeader {
+        text-align: center;
+        color: white;
+        font-size: 1 0px;
+        margin-top: 30px;
+        margin-bottom: 50px;
+    }
+
+    th {
+        font-size: 10px;
+        padding-left: 7px !important;
+    }
+
+    td {
+        font-size: 15px;
+        padding: none !important;
+        text-align: left;
+    }
+
+    tr {
+        font-size: 10px;
+    }
+
+    .breweryInfo {
+        color: white;
+        text-align: center;
+        font-size: 14px;
+    }
+
+    #beerTitle {
+        text-align: center;
+        color: white;
+        font-size: 24px;
+        margin-top: 35px;
+        margin-bottom: 20px;
+    }
+
+    h2 {
+        font-size: 14px;
+    }
+
+    
+    #popUp {
+        display: none;
+        width: 200px;
+        position: absolute;
+        top: -160px;
+        left: 160px;
+        text-align: center;
+    }
+
+    #submitButton {
+        position: relative;
+    }
+
+    .card-body {
+        text-align: center;
+    }
+
+    .card-title {
+        padding: 2px 8px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-weight: bold;
+        margin-top: 0px;
+        position: relative;
+    }
+
+    #closeButton {
+        margin-top: 0px;
+        position: absolute;
+        top: -7px;
+        left: 145px;
+        border-radius: 7px;
+        background: rgba(218, 15, 218, 0.9);
+        color: white;
+    }
+
+    .card-title.closeButton {
+        margin-left: 49px;
+        padding-left: 8px;
+        margin-right: -13px;
+        margin-top: 10px;
+    }
+
+    .card-text {
+        font-size: 12px;
+    }
+}
+
+/* Width at 640px and below */
+
+@media only screen and (max-width : 640px) {
+
+    #header {
+        background: rgb(211, 211, 211, 0.4) !important;
+        padding: 20px !important;
+        text-align: center;
+        position: relative;
+    }
+
+    #imageContainer {
+        position: relative;
+    }
+
+    #slogan {
+        text-align: center;
+        font-size: 16px;
+        width: 60%;
+        margin: 100px auto 80px;
+    }
+
+    #imageText {
+        position: relative;
+        /* bottom: 0%; */
+        left: auto;
+        font-size: 20px;
+    }
+
+    #trackLink {
+        position: relative;
+        /* top: 30%; */
+        right: auto;
+        font-size: 12px;
+        transition: all 0.5s ease 0s;
+        align-content: center;
+        padding-top: 10px;
+    }
+
+    #motivationalQuote {
+        display: none;
+        text-align: center;
+        font-size: 14px;
+        animation: change_opacity 4s infinite alternate;
+        margin: 100px auto;
+        height: 75px;
+    }
+
+    .table {
+        text-align: center;
+        table-layout: inherit;
+        margin-bottom: 10px;
+        color: white;
+    }
+
+    #tableHeader {
+        text-align: center;
+        color: white;
+        font-size: 12px;
+        margin-top: 30px;
+        margin-bottom: 50px;
+    }
+
+    th {
+        font-size: 10px;
+        padding-left: 7px !important;
+    }
+
+    td {
+        font-size: 15px;
+        padding: none !important;
+        text-align: left;
+    }
+
+    tr {
+        font-size: 10px;
+    }
+
+    #weatherDiv {
+        display: none;
+        border-top: 1px solid transparent;
+        border-bottom: 1px solid transparent;
+        border-radius: 8px;
+        margin: 30px auto 100px;
+        clear: both;
+        background: rgba(218, 15, 218, 0.8);
+    }
+
+    #beerDiv {
+        display: none;
+        margin-top: 150px;
+        margin-bottom: 20px;
+        background: rgba(218, 15, 218, 0.8);
+        padding: 10px;
+        border-radius: 8px;
+    }
+
+    .breweryInfo {
+        color: white;
+        text-align: center;
+        font-size: 14px;
+    }
+
+    #beerTitle {
+        text-align: center;
+        color: white;
+        font-size: 18px;
+        margin-top: 35px;
+        margin-bottom: 20px;
+    }
+
+    h2 {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    #popUp {
+        display: none;
+        width: 200px;
+        position: absolute;
+        top: -160px;
+        left: 140px;
+        text-align: center;
+    }
+
+    #submitButton {
+        position: relative;
+    }
+
+    .card-body {
+        text-align: center;
+    }
+
+    .card-title {
+        padding: 2px 8px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-weight: bold;
+        margin-top: 0px;
+        position: relative;
+    }
+
+    #closeButton {
+        margin-top: 0px;
+        position: absolute;
+        top: -7px;
+        left: 145px;
+        border-radius: 7px;
+        background: rgba(218, 15, 218, 0.9);
+        color: white;
+    }
+
+    .card-title.closeButton {
+        margin-left: 49px;
+        padding-left: 8px;
+        margin-right: -13px;
+        margin-top: 10px;
+    }
+
+    .card-text {
+        font-size: 12px;
+    }
+
+}

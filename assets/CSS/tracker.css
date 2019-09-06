@@ -1,0 +1,577 @@
+body {
+    background-image: linear-gradient(0deg, rgba(134, 8, 8, 0.5), rgba(13, 10, 235, 0.5)), url(../Images/background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'Lexend Mega', sans-serif;
+    margin-bottom: 200px;
+    text-align: center;
+}
+
+/* header div with logo */
+
+#header {
+    background: rgb(211, 211, 211, 0.4) !important;
+    padding: 20px !important;
+    text-align: center;
+    position: relative;
+}
+
+/* logo in the header */
+
+#imageContainer {
+    position: relative;
+}
+
+h2 {
+    color: white;
+    margin-top: 90px;
+}
+
+/* text on the logo, "Be4" */
+
+#imageText {
+    position: absolute;
+    bottom: 0%;
+    left: 40%;
+    color: white;
+    font-size: 60px;
+    font-family: 'Rock Salt', cursive;
+}
+
+#trackLink {
+    position: absolute;
+    top: 60%;
+    right: 180px;
+    color: white;
+    font-size: 25px;
+    transition: all 0.5s ease 0s;
+}
+
+#trackLink:hover {
+    text-decoration: none;
+    color: white !important;
+    font-weight: 700 !important;
+    padding: 5px;
+    border-radius: 8px;
+    letter-spacing: 3px;
+    background: rgba(218, 15, 218, 0.6);
+    -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0);
+    -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0);
+    transition: all 0.3s ease 0s;
+}
+
+#trackerInstructions {
+    margin-bottom: 70px;
+    color: white;
+}
+
+form {
+    display: inline-block;
+    width: 50%;
+}
+
+#formDiv {
+    background: rgba(218, 15, 218, 0.8);
+    border-radius: 8px;
+    padding: 30px;
+    margin-bottom: 50px;
+}
+
+#formDate,
+#formDistance,
+#formTimeStart,
+#formTimeEnd {
+    text-align: left;
+}
+
+#submitButton {
+    border: none;
+    background: rgba(241, 240, 241, 0.9);
+    color: black !important;
+    font-weight: 100;
+    margin-top: 40px;
+    margin-bottom: 22px;
+    padding: 10px 30px;
+    border-radius: 6px;
+    display: inline-block;
+    transition: all 0.3s ease 0s;
+}
+
+#submitButton:hover {
+    color: white !important;
+    font-weight: 700 !important;
+    letter-spacing: 3px;
+    background: rgba(218, 15, 218, 0.8);
+    -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0);
+    -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0);
+    transition: all 0.3s ease 0s;
+}
+
+#tableContainer {
+    border-radius: 8px;
+    background: rgba(81, 81, 83, 0.5);
+}
+
+.table {
+    margin-top: 40px;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+
+h3 {
+    padding-top: 45px;
+    color: white;
+    text-align: center;
+    margin-top: 30px;
+}
+
+#popUp {
+    display: none;
+    width: 400px;
+    position: absolute;
+    top: 550px;
+    left: 520px;
+    animation: ease-out;
+}
+
+#submitButton {
+    position: relative;
+}
+
+.card-title {
+    padding: 2px 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+
+}
+
+.card-title .closeButton {
+    margin-left: 49px;
+    padding-left: 8px;
+    margin-right: -13px;
+    margin-top: -31px;
+}
+
+#closeButton {
+    border-radius: 7px;
+    background: rgba(218, 15, 218, 0.9);
+    color: white;
+}
+
+h2 {
+    color: black;
+    margin-top: 0px;
+    margin-left: 55px;
+}
+
+/* Responsive Design */
+
+/* Width at 980px and below */
+@media screen and (max-width: 960px) {
+
+    #header {
+        background: rgb(211, 211, 211, 0.4) !important;
+        padding: 20px !important;
+        text-align: center;
+        position: relative;
+    }
+
+    #imageContainer {
+        position: relative;
+    }
+
+    #slogan {
+        text-align: center;
+        font-size: 16px;
+        width: 60%;
+        margin: 100px auto 80px;
+    }
+
+    #trackerInstructions {
+        margin-bottom: 70px;
+        color: white;
+        font-size: 14px;
+        text-align: center;
+    }
+
+    h2 {
+        color: white;
+        margin-top: 90px;
+        font-size: 14px;
+        text-align: justify;
+    }
+
+    #imageContainer {
+        position: relative;
+    }
+
+    #submitButton:hover {
+        color: white !important;
+        font-weight: 700 !important;
+        letter-spacing: 3px;
+        background: rgba(218, 15, 218, 0.8);
+        -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0);
+        -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0);
+        transition: all 0.3s ease 0s;
+    }
+    
+    #tableContainer {
+        border-radius: 8px;
+        background: rgba(81, 81, 83, 0.5);
+    }
+    
+    .table {
+        margin-top: 20px;
+        color: white;
+        text-align: center;
+        font-size: 10px;
+        padding-bottom: 10px;
+    }
+
+    #tableContainer {
+        border-radius: 8px;
+        background: rgba(81, 81, 83, 0.5);
+    }
+
+    #imageText {
+        position: relative;
+        /* bottom: 0%; */
+        left: auto;
+        font-size: 20px;
+    }
+
+    #trackLink {
+        position: relative;
+        /* top: 30%; */
+        right: auto;
+        font-size: 12px;
+        transition: all 0.5s ease 0s;
+        align-content: center;
+        padding-top: 10px;
+    }
+
+
+    #popUp {
+        display: none;
+        width: 200px;
+        position: absolute;
+        top: 500px;
+        left: 60px;
+        text-align: center;
+    }
+
+    #submitButton {
+        position: relative;
+    }
+
+    .card-body {
+        text-align: center;
+    }
+
+    .card-title {
+        padding: 2px 8px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-weight: bold;
+        margin-top: 0px;
+        position: relative;
+    }
+
+    #closeButton {
+        margin-top: 0px;
+        position: absolute;
+        top: -7px;
+        left: 85px;
+        border-radius: 7px;
+        background: rgba(218, 15, 218, 0.9);
+        color: white;
+    }
+
+    .card-title.closeButton {
+        margin-left: 49px;
+        padding-left: 8px;
+        margin-right: -13px;
+        margin-top: 10px;
+    }
+
+    .card-text {
+        font-size: 12px;
+    }
+
+
+}
+
+/* Width at 768px and below */
+
+@media screen and (max-width: 768px) {
+
+    #header {
+        background: rgb(211, 211, 211, 0.4) !important;
+        padding: 20px !important;
+        text-align: center;
+        position: relative;
+    }
+
+    #imageContainer {
+        position: relative;
+    }
+
+    #slogan {
+        text-align: center;
+        font-size: 16px;
+        width: 60%;
+        margin: 100px auto 80px;
+    }
+
+    #trackerInstructions {
+        margin-bottom: 70px;
+        color: white;
+        font-size: 14px;
+        text-align: center;
+    }
+
+    h2 {
+        color: white;
+        margin-top: 90px;
+        font-size: 14px;
+        text-align: justify;
+    }
+
+    #imageContainer {
+        position: relative;
+    }
+
+    #submitButton:hover {
+        color: white !important;
+        font-weight: 700 !important;
+        letter-spacing: 3px;
+        background: rgba(218, 15, 218, 0.8);
+        -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0);
+        -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0);
+        transition: all 0.3s ease 0s;
+    }
+    
+    #tableContainer {
+        border-radius: 8px;
+        background: rgba(81, 81, 83, 0.5);
+    }
+    
+    .table {
+        margin-top: 20px;
+        color: white;
+        text-align: center;
+        font-size: 10px;
+        padding-bottom: 10px;
+    }
+
+    #tableContainer {
+        border-radius: 8px;
+        background: rgba(81, 81, 83, 0.5);
+    }
+
+    #imageText {
+        position: relative;
+        /* bottom: 0%; */
+        left: auto;
+        font-size: 20px;
+    }
+
+    #trackLink {
+        position: relative;
+        /* top: 30%; */
+        right: auto;
+        font-size: 12px;
+        transition: all 0.5s ease 0s;
+        align-content: center;
+        padding-top: 10px;
+    }
+
+
+    #popUp {
+        display: none;
+        width: 200px;
+        position: absolute;
+        top: 500px;
+        left: 180px;
+        text-align: center;
+    }
+
+    #submitButton {
+        position: relative;
+    }
+
+    .card-body {
+        text-align: center;
+    }
+
+    .card-title {
+        padding: 2px 8px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-weight: bold;
+        margin-top: 0px;
+        position: relative;
+    }
+
+    #closeButton {
+        margin-top: 0px;
+        position: absolute;
+        top: -7px;
+        left: 85px;
+        border-radius: 7px;
+        background: rgba(218, 15, 218, 0.9);
+        color: white;
+    }
+
+    .card-title.closeButton {
+        margin-left: 49px;
+        padding-left: 8px;
+        margin-right: -13px;
+        margin-top: 10px;
+    }
+
+    .card-text {
+        font-size: 12px;
+    }
+
+}
+
+/* Width at 640px and below */
+
+@media only screen and (max-width : 640px) {
+
+    #header {
+        background: rgb(211, 211, 211, 0.4) !important;
+        padding: 20px !important;
+        text-align: center;
+        position: relative;
+    }
+
+    #imageContainer {
+        position: relative;
+    }
+
+    #slogan {
+        text-align: center;
+        font-size: 16px;
+        width: 60%;
+        margin: 100px auto 80px;
+    }
+
+    #trackerInstructions {
+        margin-bottom: 70px;
+        color: white;
+        font-size: 14px;
+    }
+
+    h2 {
+        color: white;
+        margin-top: 90px;
+        font-size: 14px;
+        text-align: justify;
+    }
+
+    #imageContainer {
+        position: relative;
+    }
+
+    #submitButton:hover {
+        color: white !important;
+        font-weight: 700 !important;
+        letter-spacing: 3px;
+        background: rgba(218, 15, 218, 0.8);
+        -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0);
+        -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0);
+        transition: all 0.3s ease 0s;
+    }
+    
+    #tableContainer {
+        border-radius: 8px;
+        background: rgba(81, 81, 83, 0.5);
+    }
+    
+    .table {
+        margin-top: 20px;
+        color: white;
+        text-align: center;
+        font-size: 10px;
+        padding-bottom: 10px;
+    }
+
+    #tableContainer {
+        border-radius: 8px;
+        background: rgba(81, 81, 83, 0.5);
+    }
+
+    #imageText {
+        position: relative;
+        /* bottom: 0%; */
+        left: auto;
+        font-size: 20px;
+    }
+
+    #trackLink {
+        position: relative;
+        /* top: 30%; */
+        right: auto;
+        font-size: 12px;
+        transition: all 0.5s ease 0s;
+        align-content: center;
+        padding-top: 10px;
+    }
+
+    #popUp {
+        display: none;
+        width: 200px;
+        position: absolute;
+        top: 500px;
+        left: 175px;
+        text-align: center;
+    }
+
+    #submitButton {
+        position: relative;
+    }
+
+    .card-body {
+        text-align: center;
+    }
+
+    .card-title {
+        padding: 2px 8px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-weight: bold;
+        margin-top: 0px;
+        position: relative;
+    }
+
+    #closeButton {
+        margin-top: 0px;
+        position: absolute;
+        top: -7px;
+        left: 85px;
+        border-radius: 7px;
+        background: rgba(218, 15, 218, 0.9);
+        color: white;
+    }
+
+    .card-title.closeButton {
+        margin-left: 49px;
+        padding-left: 8px;
+        margin-right: -13px;
+        margin-top: 10px;
+    }
+
+    .card-text {
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,125 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Lexend+Mega&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans|Rock+Salt&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/CSS/tracker.css">
+    <title>Running App</title>
+</head>
+
+<body>
+
+    <!-- jumbotron header -->
+    <!-- <div class="jumbotron jumbotron-fluid" id="header">
+        <div class="container">
+            <div id="imageContainer">
+                <a href="index.html"><img src="assets/Images/runningLogo.png" width="130" height="130"
+                        alt="Tnt Girl Running PNG image"/>
+                    </a>
+                <a href="index.html">
+                    <div id="imageText">Be4</div>
+                </a>
+            </div>
+            <a id="trackLink" href="index.html">Home</a>
+
+        </div>
+    </div> -->
+
+     <!-- jumbotron header -->
+     <div class="jumbotron jumbotron-fluid" id="header">
+        <div class="container">
+            <div id="imageContainer">
+                <a href="index.html"><img src="assets/Images/runningLogo.png" width="130" height="130"
+                        alt="Tnt Girl Running PNG image" />
+                </a>
+                <a href="index.html">
+                    <div id="imageText">Be4</div>
+                </a>
+            </div>
+
+            <a id="trackLink" href="index.html">Home</a>
+        </div>
+    </div>
+
+    <h2 id="trackerInstructions">Enter your stats to keep track of all your runs</h2>
+
+    <!-- form to enter run data -->
+    <form>
+        <div id="formDiv">
+            <div class="form-group" id="formDate">
+                <label for="exampleInputPassword1">Date</label>
+                <input type="date" class="form-control" id="dateInput">
+            </div>
+            <div class="form-group" id="formDistance">
+                <label for="exampleInputEmail1">Distance</label>
+                <input type="text" class="form-control" id="distanceInput" placeholder="ex  3.2"
+                    aria-describedby="emailHelp">
+                <span class="glyphicon glyphicon-time"></span>
+            </div>
+            <div class="form-group" id="formTimeStart">
+                <label for="exampleInputPassword1">Start Time</label>
+                <input type="time" class="form-control" id="startInput" placeholder="start time">
+            </div>
+            <div class="form-group" id="formTimeEnd">
+                <label for="exampleInputPassword1">End Time</label>
+                <input type="time" class="form-control" id="endInput" placeholder="end time">
+            </div>
+
+            <div class="card shadow bg-warning" id="popUp">
+                <div class="card-body">
+                    <div class="card-title">
+                        <div class="title"><h2>Attention!</h2></div>
+                            <button type="button" class="closeButton" id="closeButton">x</button>
+                        </div>
+                    <!-- <h4>Attention!</h4> -->
+                    <p class="card-text">
+                        All forms must be filled.
+                    </p>
+                </div>
+            </div>
+
+
+            <button type="button" class="btn btn-primary" id="submitButton">Submit</button>
+        </div>
+    </form>
+
+    <!-- table -->
+    <div class="container" id="tableContainer">
+        <table class="table" id="table">
+            <h3>Run Tracker</h3>
+            <thead>
+                <tr>
+                    <th scope="col">Date</th>
+                    <th scope="col">Distance</th>
+                    <th scope="col">Time</th>
+                    <th scope="col">Average Speed</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody">
+            </tbody>
+        </table>
+    </div>
+
+
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/localforage/1.7.3/localforage.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.15.3/axios.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="assets/JavaScript/tracker.js"></script>
+
+</body>
